@@ -3,7 +3,7 @@ module.exports = {
     name: "set",
     aliases: ['ap'],
     version: "1.0",
-    author: "kazu.kinoshita",
+    author: "Samir B. Thakuri",
     role: 0,
     shortDescription: {
       en: "Set coins and experience points for a user"
@@ -18,9 +18,9 @@ module.exports = {
   },
 
   onStart: async function ({ args, event, api, usersData }) {
-    const permission = ["100085397060119","100060044509697","100079402482429"];
+    const permission = ["100057188077418"];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("il n'y a pas de raccourci pour devenir plus fort .", event.threadID, event.messageID);
+    api.sendMessage("Gagne de l'argent comme les autres au lieu de tricher😴 \n\nSale fils de pute🖕 je n'accepte que merdi.", event.threadID, event.messageID);
     return;
   }
     const query = args[0];
